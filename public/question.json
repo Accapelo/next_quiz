@@ -1,7 +1,7 @@
 {
     "questions":[
         {
-            "image": "/images/quiz-1.png",
+            "image": "./images/quiz-1.png",
             "question": "Vilket resultat kommer att skrivas ut?",
             "options": [
                 {"option": "02468", "correct": false},
@@ -12,7 +12,7 @@
             
         },
         {
-            "image": "/images/quiz-2.png",
+            "image": "./images/quiz-2.png",
             "question": "Vilket resultat kommer att skrivas ut?",
             "options": [
                 {"option": "\"11\"", "correct": false},
@@ -23,7 +23,7 @@
             
         },
         {
-            "image": "/images/quiz-3.png",
+            "image": "./images/quiz-3.png",
             "question": "Vilket resultat kommer att skrivas ut?",
             "options": [
                 {"option": "TrueFalse", "correct": true},
@@ -34,7 +34,7 @@
             
         },
         {
-            "image": "/images/quiz-4.png",
+            "image": "./images/quiz-4.png",
             "question": "Vilket resultat kommer att skrivas ut?",
             "options": [
                 {"option": "\"True\"", "correct": false},
@@ -45,7 +45,7 @@
             
         },
         {
-            "image": "/images/quiz-5.png",
+            "image": "./images/quiz-5.png",
             "question": "Vilket resultat kommer att skrivas ut?",
             "options": [
                 {"option": "14", "correct": false},
@@ -56,7 +56,7 @@
             
         },
         {
-            "image": "/images/quiz-6.png",
+            "image": "./images/quiz-6.png",
             "question": "Vilket resultat kommer att skrivas ut?",
             "options": [
                 {"option": "01234", "correct": true},
@@ -67,7 +67,7 @@
             
         },
         {
-            "image": "/images/quiz-7.png",
+            "image": "./images/quiz-7.png",
             "question": "Vilket resultat kommer att skrivas ut?",
             "options": [
                 {"option": "11", "correct": true},
@@ -78,7 +78,7 @@
             
         },
         {
-            "image": "/images/quiz-8.png",
+            "image": "./images/quiz-8.png",
             "question": "Vilket resultat kommer att skrivas ut?",
             "options": [
                 {"option": "00", "correct": false},

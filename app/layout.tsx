@@ -23,7 +23,7 @@ export default function RootLayout({
         <main className="flex min-h-screen flex-col items-center justify-between p-12">
           <div className="relative flex place-items-center">
             <Image
-              src="/images/Consid-logo-liggande-vit.png"
+              src="./images/Consid-logo-liggande-vit.png"
               alt="Consid Logo"
               width={180}
               height={40}

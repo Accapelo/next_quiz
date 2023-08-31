@@ -21,7 +21,7 @@ export default function RootLayout({
       </head>
       <body className={`${font.className} h-full`}>
         <main className="flex h-full flex-col items-center justify-between p-12">
-          <div className="relative flex place-items-center">
+          <div className="relative flex place-items-center mb-2">
             <Image
               src="./images/Consid-logo-liggande-vit.png"
               alt="Consid Logo"

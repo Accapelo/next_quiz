@@ -15,12 +15,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="sv">
+    <html lang="sv" className='h-full'>
       <head>
         <link rel='icon' href='/favicon.png'/>
       </head>
-      <body className={font.className}>
-        <main className="flex min-h-screen flex-col items-center justify-between p-12">
+      <body className={`${font.className} h-full`}>
+        <main className="flex h-full flex-col items-center justify-between p-12">
           <div className="relative flex place-items-center">
             <Image
               src="./images/Consid-logo-liggande-vit.png"

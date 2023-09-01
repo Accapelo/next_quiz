@@ -57,8 +57,8 @@ export default function Quiz() {
                     >
                         {questions.questions.map((qs,i)=>{
                             return(
-                                <SwiperSlide key={i}>
-                                    <div className='flex justify-center items-center flex-col'>
+                                <SwiperSlide className='flex' key={i}>
+                                    <div className='flex justify-center items-center flex-col flex-1'>
                                         <div className='flex flex-col gap-4'>
                                             <div className='flex justify-center'>
                                                 <Image

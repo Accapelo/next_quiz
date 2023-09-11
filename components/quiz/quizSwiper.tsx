@@ -5,7 +5,7 @@ import questions from '../../public/question.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import SwiperClass from 'swiper/types/swiper-class';
-import { FILE_PRETENSE } from '@/app/layout';
+import { FILE_PRETENSE } from '@/public/text';
 
 export default function QuizSwiper({index, setIndex}: {index: number, setIndex: (value: SetStateAction<number>) => void}) {
     const [swiper, setSwiper] = useState<SwiperClass>();

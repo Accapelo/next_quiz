@@ -4,10 +4,10 @@ import 'swiper/css';
 import QuizSwiper from './quizSwiper';
 import { useEffect, useState } from 'react';
 import Form from '../form/form';
-import { FILE_PRETENSE } from '@/app/layout';
 import { office, submitInfo } from '../form/types';
 import Win from './win';
 import Loss from './loss';
+import { FILE_PRETENSE } from '@/public/text';
 
 export default function Quiz() {
 

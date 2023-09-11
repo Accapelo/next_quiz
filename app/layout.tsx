@@ -1,3 +1,4 @@
+import { FILE_PRETENSE } from '@/public/text'
 import './globals.css'
 import localFont from 'next/font/local'
 import Image from 'next/image'
@@ -8,9 +9,6 @@ export const metadata = {
   title: 'Consid kod-quiz',
   description: 'Klara av frågorna och vinn ett pris av Consid',
 }
-
-//This is used to go from testing locally "/" to hosted on gh-pages "./"
-export const FILE_PRETENSE = "./";
 
 export default function RootLayout({
   children,

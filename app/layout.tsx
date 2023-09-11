@@ -9,6 +9,9 @@ export const metadata = {
   description: 'Klara av frågorna och vinn ett pris av Consid',
 }
 
+//This is used to go from testing locally "/" to hosted on gh-pages "./"
+export const FILE_PRETENSE = "./";
+
 export default function RootLayout({
   children,
 }: {
@@ -23,7 +26,7 @@ export default function RootLayout({
         <main className="flex h-full flex-col items-center justify-between p-12">
           <div className="relative flex place-items-center">
             <Image
-              src="./images/Consid-logo-liggande-vit.png"
+              src={`${FILE_PRETENSE}images/Consid-logo-liggande-vit.png`}
               alt="Consid Logo"
               width={180}
               height={40}

@@ -1,92 +1,93 @@
 {
     "questions":[
         {
-            "image": "./images/quiz-1.png",
+            "image": "images/quiz-1.png",
             "question": "Vilket resultat kommer att skrivas ut?",
             "options": [
-                {"option": "02468", "correct": false},
+                {"option": "02468"},
                 {"option": "13579", "correct": true},
-                {"option": "048", "correct": false},
-                {"option": "159", "correct": false}
-            ]
-            
+                {"option": "048"},
+                {"option": "159"}
+            ],
+            "correctIndex": 1
         },
         {
-            "image": "./images/quiz-2.png",
+            "image": "images/quiz-2.png",
             "question": "Vilket resultat kommer att skrivas ut?",
             "options": [
-                {"option": "\"11\"", "correct": false},
-                {"option": "\"10\"", "correct": false},
-                {"option": "10", "correct": false},
+                {"option": "\"11\""},
+                {"option": "\"10\""},
+                {"option": "10"},
                 {"option": "11", "correct": true}
-            ]
+            ],
+            "correctIndex": 3
             
         },
         {
-            "image": "./images/quiz-3.png",
+            "image": "images/quiz-3.png",
             "question": "Vilket resultat kommer att skrivas ut?",
             "options": [
                 {"option": "TrueFalse", "correct": true},
-                {"option": "FalseFalse", "correct": false},
-                {"option": "FalseTrue", "correct": false},
-                {"option": "TrueTrue", "correct": false}
-            ]
-            
+                {"option": "FalseFalse"},
+                {"option": "FalseTrue"},
+                {"option": "TrueTrue"}
+            ],
+            "correctIndex": 0
         },
         {
-            "image": "./images/quiz-4.png",
+            "image": "images/quiz-4.png",
             "question": "Vilket resultat kommer att skrivas ut?",
             "options": [
-                {"option": "\"True\"", "correct": false},
-                {"option": "\"\"", "correct": false},
+                {"option": "\"True\""},
+                {"option": "\"\""},
                 {"option": "\"End\"", "correct": true},
-                {"option": "\"TrueEnd\"", "correct": false}
-            ]
-            
+                {"option": "\"TrueEnd\""}
+            ],
+            "correctIndex": 2
         },
         {
-            "image": "./images/quiz-5.png",
+            "image": "images/quiz-5.png",
             "question": "Vilket resultat kommer att skrivas ut?",
             "options": [
-                {"option": "14", "correct": false},
-                {"option": "15", "correct": false},
+                {"option": "14"},
+                {"option": "15"},
                 {"option": "16", "correct": true},
-                {"option": "17", "correct": false}
-            ]
-            
+                {"option": "17"}
+            ],
+            "correctIndex": 2
         },
         {
-            "image": "./images/quiz-6.png",
+            "image": "images/quiz-6.png",
             "question": "Vilket resultat kommer att skrivas ut?",
             "options": [
                 {"option": "01234", "correct": true},
-                {"option": "01234567", "correct": false},
-                {"option": "0246", "correct": false},
-                {"option": "02", "correct": false}
-            ]
-            
+                {"option": "01234567"},
+                {"option": "0246"},
+                {"option": "02"}
+            ],
+            "correctIndex": 0
         },
         {
-            "image": "./images/quiz-7.png",
+            "image": "images/quiz-7.png",
             "question": "Vilket resultat kommer att skrivas ut?",
             "options": [
                 {"option": "11", "correct": true},
-                {"option": "12", "correct": false},
-                {"option": "10", "correct": false},
-                {"option": "56", "correct": false}
-            ]
-            
+                {"option": "12"},
+                {"option": "10"},
+                {"option": "56"}
+            ],
+            "correctIndex": 0
         },
         {
-            "image": "./images/quiz-8.png",
+            "image": "images/quiz-8.png",
             "question": "Vilket resultat kommer att skrivas ut?",
             "options": [
-                {"option": "00", "correct": false},
-                {"option": "55", "correct": false},
+                {"option": "00"},
+                {"option": "55"},
                 {"option": "010", "correct": true},
-                {"option": "510", "correct": false}
-            ]
-            
+                {"option": "510"}
+            ],
+            "correctIndex": 2
         }
     ]
 }

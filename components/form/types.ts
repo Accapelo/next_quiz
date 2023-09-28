@@ -53,5 +53,6 @@ export interface submitInfo{
     firstName: string, 
     lastName: string, 
     email: string, 
-    office: Array<string>,
+    office: string,
+    score: number
 }

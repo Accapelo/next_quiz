@@ -3,6 +3,7 @@ type BlockFormFields = {
     firstName: string,
     lastName: string,
     office: string,
+    score: number
 }
 
 function getRequestParams(
@@ -22,12 +23,16 @@ function getRequestParams(
   // https://mailchimp.com/developer/reference/lists/list-members/
   const data = {
     email_address: formData.email,
+    status_if_new: "subscribed",
     merge_fields: {
+      EMAIL: formData.email,
       FNAME: formData.firstName,
       LNAME: formData.lastName,
+      OFFICE: formData.office,
+      SCORE: formData.score
     },
-    tags: [formData.office]
   }
+
 
   // Api key needs to be encoded in base 64 format
   const base64ApiKey = Buffer.from(`anystring:${API_KEY}`).toString('base64')
@@ -55,7 +60,6 @@ export async function POST(req: Request) {
     const { url, data, headers } = getRequestParams(
       formData,
     )
-
     await fetch(url, {
       body: JSON.stringify(data),
       headers: headers,

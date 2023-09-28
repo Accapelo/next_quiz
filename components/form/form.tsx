@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { office, submitInfo } from './types';
 import { FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material';
 
-export default function Form({submit, errorText}: {submit: (info: submitInfo, office: office) => Promise<void>, errorText: string}) {
+export default function Form({submit, errorText, score}: {submit: (info: submitInfo, office: office) => Promise<void>, errorText: string, score: number}) {
     const [offices, setOffices] = useState<office[]>([]);
     const [selectedOfficeIndex, setSelectedOfficeIndex] = useState(0);
     const [userInfo, setUserInfo] = useState({email: "", firstName: "", lastName: ""});
@@ -178,7 +178,7 @@ export default function Form({submit, errorText}: {submit: (info: submitInfo, of
                             })} 
                         </Select>
                     </FormControl>
-                    <button className='py-2.5 px-6 w-full rounded-full border-2 text-base font-semibold border-[rgb(var(--beige))] transition-all hover:bg-[rgb(var(--winered))]' onClick={()=>submit({firstName: userInfo.firstName, lastName: userInfo.lastName, email: userInfo.email, office: [offices[selectedOfficeIndex].title.rendered]}, offices[selectedOfficeIndex])}>Skicka in</button>
+                    <button className='py-2.5 px-6 w-full rounded-full border-2 text-base font-semibold border-[rgb(var(--beige))] transition-all hover:bg-[rgb(var(--winered))]' onClick={()=>submit({firstName: userInfo.firstName, lastName: userInfo.lastName, email: userInfo.email, office: offices[selectedOfficeIndex].title.rendered, score: score}, offices[selectedOfficeIndex])}>Skicka in</button>
                 </div>  
             </div>
     )

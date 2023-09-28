@@ -25,6 +25,7 @@ export default function Quiz() {
     function resetQuiz(){
         sessionStorage.removeItem("questionIndex");
         sessionStorage.removeItem(`answers`);
+        sessionStorage.removeItem(`office`);
         setIndex(0);
     }
 
@@ -63,16 +64,17 @@ export default function Quiz() {
                 />
                 :
                 <div className='flex flex-col flex-1 items-center justify-around xl:items-center w-full'>
-                    {calculateResults() >= (questions.questions.length/2) ?
-                        !submittedOffice ? 
-                            <Form
-                                submit={submitAPI}
-                                errorText={errorText}
-                            />
-                            :
+                    {submittedOffice ? 
+                        calculateResults() >= (questions.questions.length/2) ?
                             <Win result={calculateResults()} officeInfo={submittedOffice} />
+                            :
+                            <Loss result={calculateResults()} resetQuiz={resetQuiz}/>
                     : 
-                        <Loss result={calculateResults()} resetQuiz={resetQuiz}/>
+                        <Form
+                            submit={submitAPI}
+                            errorText={errorText}
+                            score={calculateResults()}
+                        />
                     }
                 </div>    
             }
